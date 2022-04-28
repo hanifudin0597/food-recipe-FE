@@ -1,0 +1,98 @@
+.hero {
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.mainContent {
+    width: 100%;
+    margin-top: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.profileImg {
+    object-fit: cover;
+    width: 120px;
+    height: 120px;
+    border-radius: 75px;
+}
+
+.iconEditUser {
+    position: absolute;
+    margin-left: 130px;
+    margin-top: 40px;
+}
+
+.userImg {
+    width: 30px;
+    height: 30px;
+}
+
+.nabTab {
+    margin-left: 80px;
+    width: 90%;
+}
+
+.tabContentNav {
+    width: 90%;
+    margin-left: 80px;
+}
+
+/* .listMyRecipe {
+    margin-right: 5px;
+} */
+
+.actionRecipeEdit {
+    font-size: 25px;
+    background-color: #EFC81A;
+    margin-right: 10px;
+    position: absolute;
+    top: 10px;
+    right: 55px;
+    text-decoration: none;
+}
+
+.actionRecipeDelete {
+    font-size: 15px;
+    background-color: #EFC81A;
+    margin-right: 5px;
+    position: absolute;
+    right: 25px;
+    top: 10px;
+}
+
+.cardMyRecipeImg {
+    width: 200px;
+    height: 150px;
+    object-fit: cover;
+    margin: 0px 20px 10px 0px;
+    border-radius: 6px;
+}
+
+.formListMyRecipe {
+    position: relative;
+}
+
+.titleMyRecipe {
+    color: white;
+    position: absolute;
+    font-size: 17px;
+    top: 120px;
+    padding-left: 5px;
+    /* z-index: 9999; */
+}
+
+.heighTabContent {
+    height: 200px;
+}

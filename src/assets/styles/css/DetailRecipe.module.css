@@ -1,0 +1,104 @@
+.body {
+    overflow-x: hidden !important;
+}
+
+/* .row {
+    margin-right: 0px !important;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+
+} */
+
+.textH1 {
+    color: #2E266F;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.detailImg {
+    width: 600px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.detailIngredient {
+    width: 60%;
+}
+
+.listIngredient {
+    width: 50%;
+}
+
+.buttonVideo {
+    border: none;
+    width: 150px;
+    height: 50px;
+    background-color: #EFC81A;
+    border-radius: 5px;
+    background-image: url('../../img/iconVideo.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 20px 20px 20px 0px;
+}
+
+.marginAfterNavbarMenu {
+    margin-top: 120px;
+}
+
+/* Comment styling */
+.commentRecipe {
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.buttonComment {
+    border: none;
+    width: 170px;
+    height: 40px;
+    margin: 30px 0px 30px 0px;
+    background-color: #EFC81A;
+    border-radius: 5px;
+    color: white;
+    text-align: center;
+    margin-left: 38%;
+}
+
+.formCommentBypeople {
+    margin-top: 20px;
+}
+
+.commentByPeopleImg {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 25px;
+    margin-right: 20px;
+    margin-top: 9px;
+}
+
+/* media Query */
+@media screen and (max-width: 700px) {
+    .buttonComment {
+        margin-left: 12%;
+    }
+
+    .listIngredient {
+        width: 100%;
+    }
+
+    .buttonVideo {
+        width: 100px;
+        height: 40px;
+    }
+
+    .detailImg {
+        width: 320px;
+        height: 250px;
+    }
+
+    .inputTextArea {
+        height: 150px;
+    }
+
+}

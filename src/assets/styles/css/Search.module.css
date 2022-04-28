@@ -1,0 +1,96 @@
+.hero {
+    height: 100vh;
+    margin-top: 150px;
+}
+
+.widthRow {
+    width: none;
+
+}
+
+.row {
+    margin-top: 70px;
+}
+
+.formGroupInput {
+    margin-left: 60px;
+    border: none;
+    height: 60px;
+    width: 350px !important;
+    border-radius: 5px;
+    text-indent: 10px;
+    border: none;
+    background-color: #EFEFEF;
+    margin-bottom: 100px;
+}
+
+.texListNewRecipe {
+    margin-left: 60px;
+    font-family: 'Lato',
+        sans-serif;
+}
+
+.widthCardImg {
+    width: auto;
+}
+
+.textAllrecipeH1 {
+    border-left: 15px solid #EFC81A;
+    padding-left: 10px;
+    margin-bottom: 20px;
+    font-family: 'Lato',
+        sans-serif;
+}
+
+.widthCardImg {
+    width: auto;
+}
+
+.cardNewRecipe {
+    margin-left: 70px;
+    margin-right: 60px;
+    /* width: 80%; */
+}
+
+.divCardImg {
+    margin-bottom: 20px;
+}
+
+.textDecorationListNewRecipe {
+    border: none;
+    position: relative;
+    font-family: 'Lato',
+        sans-serif;
+}
+
+.tagPListNewRecipe {
+    position: absolute;
+    bottom: 0px;
+    border: none;
+    color: white;
+    /* color: black; */
+    font-size: 20px;
+    z-index: 999;
+    margin-left: 15px;
+
+}
+
+.listNewRecipeImg {
+    /* width: auto; */
+    height: 350px;
+    width: 100%;
+    object-fit: cover;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.messageError {
+    text-align: center;
+    font-size: 30px;
+}
+
+@media screen and (max-width: 700px) {
+    .formGroupInput {
+        width: 250px !important;
+    }
+}

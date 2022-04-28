@@ -1,0 +1,65 @@
+.marginNav {
+    margin-left: 25px;
+}
+
+.paddingNav {
+    padding-left: 25px;
+    padding-right: 20px;
+}
+
+.navLinkColor {
+    color: #2E266F !important;
+    text-decoration: none;
+}
+
+.navLinkColor:active {
+    border-bottom: 2px solid #2E266F;
+}
+
+.navLinkColorLogin {
+    text-decoration: none;
+    color: 2E266F;
+}
+
+.marginNavItems {
+    margin-right: 50px;
+}
+
+.linkLogin {
+    text-align: right;
+}
+
+.iconNavBar {
+    display: hidden;
+}
+
+.fontAwesomeLogin {
+    margin-top: 11px;
+    margin-left: 5px;
+    margin-right: 10px;
+    color: white;
+    border-radius: 5px;
+}
+
+.navPrimary {
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .2);
+}
+
+.navbarNotActive {
+    background: transparent;
+}
+
+.navbarActive {
+    background: white;
+}
+
+.iconLogout {
+    margin-left: 10px;
+    border-radius: 5px;
+}
+
+/* @media screen and (max-width: 700px) {
+    .iconNavBar {
+        display: show;
+    }
+} */

@@ -1,0 +1,90 @@
+.mainContent {
+    margin-top: 120px;
+    width: 100%;
+    /* padding: 0px 15px 0px 15px; */
+}
+
+.inpuImg {
+    background-color: #F6F5F4;
+    height: 347px;
+    width: 700px;
+    position: relative;
+    border-radius: 5px;
+    border: 1px solid #8692A6;
+}
+
+.formLogoImg {
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    top: 30%;
+}
+
+.uploadImg {
+    display: none;
+}
+
+.formInput {
+    width: 100%;
+}
+
+/* .formInput {} */
+.textTitle {
+    /* border: none; */
+    width: 700px;
+    height: 50px;
+    margin: 20px 0px 20px 0px;
+    border-radius: 5px;
+    background-color: #F6F5F4;
+    border: 1px solid #8692A6;
+}
+
+.uploadVideo {
+    /* border: none; */
+    width: 700px;
+    height: 50px;
+    margin: 20px 0px 20px 0px;
+    border-radius: 5px;
+    background-color: #F6F5F4;
+    border: 1px solid #8692A6;
+}
+
+.textIngredients {
+    /* border: none; */
+    height: 347px;
+    width: 700px;
+    border-radius: 5px;
+    background-color: #F6F5F4;
+    align-content: left;
+    border: 1px solid #8692A6;
+}
+
+.buttonSubmit {
+    border: none;
+    width: 250px;
+    height: 40px;
+    background-color: #EFC81A;
+    margin: 50px 0px 50px 0px;
+    border-radius: 5px;
+    color: white;
+}
+
+@media screen and (max-width: 700px) {
+    .inpuImg {
+        height: 247px;
+        width: 300px;
+    }
+
+    .textTitle {
+        width: 300px;
+    }
+
+    .textIngredients {
+        width: 300px;
+        height: 250px;
+    }
+
+    .uploadVideo {
+        width: 300px;
+    }
+}
