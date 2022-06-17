@@ -18,7 +18,13 @@
 
 .navLinkColorLogin {
     text-decoration: none;
-    color: 2E266F;
+    color: #2E266F;
+    display: flex;
+}
+
+.userName {
+    text-decoration: none;
+    color: #2E266F;
 }
 
 .marginNavItems {
@@ -55,7 +61,14 @@
 
 .iconLogout {
     margin-left: 10px;
-    border-radius: 5px;
+    border-radius: 25px;
+    background: none;
+    color: #808080;
+    border: none;
+    text-decoration: none;
+    font-size: 20px;
+    margin-top: -6px;
+    border: 1px solid #2E266F;
 }
 
 /* @media screen and (max-width: 700px) {

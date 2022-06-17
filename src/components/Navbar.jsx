@@ -8,8 +8,7 @@ import {
   Collapse,
   Nav,
   NavItem,
-  NavLink,
-  NavbarBrand
+  NavLink
 } from "reactstrap";
 
 const NavBarPrimary = () => {
@@ -49,7 +48,7 @@ const NavBarPrimary = () => {
       return (
         <NavLink href="/login">
           <Link className={styleNavbar.navLinkColorLogin} to="/login" >
-            {decode.name}
+            <li className={styleNavbar.userName} >{decode.name}</li>
             <button className={styleNavbar.iconLogout} onClick={logout}>
               <i className="fas fa-sign-out-alt"></i>
             </button>

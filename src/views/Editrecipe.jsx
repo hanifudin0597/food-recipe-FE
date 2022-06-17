@@ -4,7 +4,7 @@ import Footer from "../components/Footer";
 import NavBarPrimary from "../components/Navbar";
 import styleAddrecipe from "../assets/styles/css/Addrecipe.module.css"
 import LogoImage from "../assets/img/logoImageUpload.svg"
-import { useParams, useNavigate, Link } from "react-router-dom";
+import { useParams, useNavigate } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { getDetailRecipe, updateRecipe } from "../redux/action/allRecipe"
 import Swal from "sweetalert2";
@@ -15,13 +15,6 @@ const EditRecipe = () => {
     const dispatch = useDispatch()
     const navigate = useNavigate()
 
-    const [photo, setPhoto] = useState('');
-    const [form, setForm] = useState({
-        title: '',
-        ingredients: '',
-        video: '',
-    })
-
     // get detail recipe
     const detailRecipe = useSelector((state) => {
         return state.detailRecipe
@@ -30,8 +23,16 @@ const EditRecipe = () => {
     useEffect(() => {
         window.scrollTo(0, 0)
         dispatch(getDetailRecipe(id))
-    }, [])
+    }, [dispatch, id])
 
+    const [photo, setPhoto] = useState('');
+    const [form, setForm] = useState({
+        title: detailRecipe.data.title || '',
+        ingredients: detailRecipe.data.ingredients ||'',
+        video: detailRecipe.data.video ||'',
+    })
+
+// console.log(form)
 
     // Post recipe after edit
     const onSubmit = (e) => {
@@ -46,27 +47,28 @@ const EditRecipe = () => {
         // console.log(formData)
 
         updateRecipe(formData, id)
-        // .then((response) => {
-        //     if (response.code == 200) {
-        //         Swal.fire({
-        //             title: response.message,
-        //             icon: "success"
-        //         })
-        //     }
-        //     else {
-        //         Swal.fire({
-        //             title: response.error,
-        //             icon: "error"
-        //         })
-        //     }
-        // })
-        // .catch((err) => {
-        //     // console.log(err)
-        //     Swal.fire({
-        //         title: err.data.message,
-        //         icon: "error"
-        //     })
-        // })
+            .then((response) => {
+                if (response.code === 200) {
+                    Swal.fire({
+                        title: response.message,
+                        icon: "success"
+                    })
+                    return navigate('/profile')
+                }
+                else {
+                    Swal.fire({
+                        title: response.error,
+                        icon: "error"
+                    })
+                }
+            })
+            .catch((err) => {
+                console.log(err)
+                Swal.fire({
+                    title: err.data.message,
+                    icon: "error"
+                })
+            })
     }
 
 
@@ -87,11 +89,11 @@ const EditRecipe = () => {
                                     </span>
                                     <input onChange={(e) => setPhoto(e.target.files[0])} className={styleAddrecipe.uploadImg} type="file" id="upload" />
                                 </label>
-                                <input onChange={(e) => setForm({ ...form, title: e.target.value })} value={detailRecipe.data.title} type="text" className={`${styleAddrecipe.textTitle}`} placeholder="Title" />
+                                <input onChange={(e) => setForm({ ...form, title: e.target.value })} value={form.title} type="text" className={`${styleAddrecipe.textTitle}`} placeholder="Title" />
                                 <textarea onChange={(e) => setForm({ ...form, ingredients: e.target.value })} className={`${styleAddrecipe.textIngredients}`} name="" id="" cols="30" placeholder="Ingredients" rows="10">{detailRecipe.data.ingredients}</textarea>
-                                <input onChange={(e) => setForm({ ...form, video: e.target.value })} value={detailRecipe.data.video} type="text" className={`${styleAddrecipe.uploadVideo}`} placeholder="Video" />
+                                <input onChange={(e) => setForm({ ...form, video: e.target.value })} value={form.video} type="text" className={`${styleAddrecipe.uploadVideo}`} placeholder="Video" />
 
-                                <button value={detailRecipe.data.video} className={`${styleAddrecipe.buttonSubmit}`} type="submit" >Post</button>
+                                <button className={`${styleAddrecipe.buttonSubmit}`} type="submit" >Update</button>
                             </form>
                         </div>
 

@@ -34,15 +34,7 @@ const router = () => {
                     <Route path="/register" element={<Register />} />
                     <Route path="/recipe" element={<Searchrecipe />} />
 
-
-                    {/* <Route path="/profile" element={<Profile />} />
-                    <Route path="/addrecipe" element={<Addrecipe />} />
-                    <Route path="/editrecipe/:id" element={<EditRecipe />} />
-                    <Route path="/:id" element={<Detailrecipe />} />
-                    <Route path="/video/:id" element={<Detailvideo />} />
-
- */}
-
+                    {/* Private Route */}
                     <Route path="/profile" element={<PrivateRoute />}>
                         <Route index element={<Profile />} />
                     </Route>

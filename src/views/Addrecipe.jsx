@@ -6,7 +6,7 @@ import styleAddrecipe from "../assets/styles/css/Addrecipe.module.css"
 import LogoImage from "../assets/img/logoImageUpload.svg"
 import { addRecipe } from "../redux/action/allRecipe";
 import Swal from "sweetalert2";
-import { Link, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 const Addrecipe = () => {
 
@@ -18,7 +18,7 @@ const Addrecipe = () => {
         video: '',
     })
 
-    console.log(form)
+    // console.log(form)
 
     const onSubmit = (e) => {
         e.preventDefault()
@@ -33,7 +33,7 @@ const Addrecipe = () => {
 
         addRecipe(formData)
             .then((response) => {
-                if (response.code == 200) {
+                if (response.code === 200) {
                     Swal.fire({
                         title: response.message,
                         icon: "success"
@@ -74,9 +74,9 @@ const Addrecipe = () => {
                                     </span>
                                     <input onChange={(e) => setPhoto(e.target.files[0])} className={styleAddrecipe.uploadImg} type="file" id="upload" required />
                                 </label>
-                                <input onChange={(e) => setForm({ ...form, title: e.target.value })} type="text" className={`${styleAddrecipe.textTitle}`} placeholder="Title" required />
-                                <textarea onChange={(e) => setForm({ ...form, ingredients: e.target.value })} className={`${styleAddrecipe.textIngredients}`} name="" id="" cols="30" placeholder="Ingredients" rows="10" required ></textarea>
-                                <input onChange={(e) => setForm({ ...form, video: e.target.value })} type="text" className={`${styleAddrecipe.uploadVideo}`} placeholder="Video" required />
+                                <input  style={{padding:'10px'}} onChange={(e) => setForm({ ...form, title: e.target.value })} type="text" className={`${styleAddrecipe.textTitle}`} placeholder="Title" required />
+                                <textarea  style={{padding:'10px'}} onChange={(e) => setForm({ ...form, ingredients: e.target.value })} className={`${styleAddrecipe.textIngredients}`} name="" id="" cols="30" placeholder="Ingredients" rows="10" required ></textarea>
+                                <input  style={{padding:'10px'}} onChange={(e) => setForm({ ...form, video: e.target.value })} type="text" className={`${styleAddrecipe.uploadVideo}`} placeholder="Video" required />
 
                                 <button className={`${styleAddrecipe.buttonSubmit}`} type="submit" >Post</button>
                             </form>

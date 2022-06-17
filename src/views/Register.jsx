@@ -32,7 +32,7 @@ const Register = () => {
 
         register(formData)
             .then((response) => {
-                if (response.code == 200) {
+                if (response.code === 200) {
                     Swal.fire({
                         title: response.message,
                         icon: "success"
@@ -68,17 +68,17 @@ const Register = () => {
                             <small className={styleLogin.inputSmall} >Create new account to access all features</small>
                             <form onSubmit={(e) => onSubmit(e)} >
                                 <label className={styleLogin.inputLabel} >Name</label>
-                                <input onChange={(e) => setForm({ ...form, name: e.target.value })} className={styleLogin.formInputType} type="text" placeholder="Name" required />
+                                <input style={{padding:'10px'}} onChange={(e) => setForm({ ...form, name: e.target.value })} className={styleLogin.formInputType} type="text" placeholder="Name" required />
                                 <label className={styleLogin.inputLabel} >Email Addres</label>
-                                <input onChange={(e) => setForm({ ...form, email: e.target.value })} className={styleLogin.formInputType} type="email" placeholder="Enter email address" required />
+                                <input style={{padding:'10px'}} onChange={(e) => setForm({ ...form, email: e.target.value })} className={styleLogin.formInputType} type="email" placeholder="Enter email address" required />
                                 <label className={styleLogin.inputLabel} >Phone Number</label>
-                                <input onChange={(e) => setForm({ ...form, phone: e.target.value })} className={styleLogin.formInputType} type="text" placeholder="08xxxxxxxxxx" required />
+                                <input style={{padding:'10px'}} onChange={(e) => setForm({ ...form, phone: e.target.value })} className={styleLogin.formInputType} type="text" placeholder="08xxxxxxxxxx" required />
                                 <label className={styleLogin.inputLabel} >Create New Password</label>
-                                <input onChange={(e) => setForm({ ...form, password: e.target.value })} className={styleLogin.formInputType} type="password" placeholder="Create New Password" required />
+                                <input style={{padding:'10px'}} onChange={(e) => setForm({ ...form, password: e.target.value })} className={styleLogin.formInputType} type="password" placeholder="Create New Password" required />
                                 <label className={styleLogin.inputLabel} >Confirmation Password</label>
-                                <input onChange={(e) => setForm({ ...form, password: e.target.value })} className={styleLogin.formInputType} type="password" placeholder="New Password" required />
+                                <input style={{padding:'10px'}} onChange={(e) => setForm({ ...form, password: e.target.value })} className={styleLogin.formInputType} type="password" placeholder="New Password" required />
                                 <label className={styleLogin.inputLabel} >Photo</label>
-                                <input onChange={(e) => setPhoto(e.target.files[0])} type="file" name="" id="" required />
+                                <input style={{padding:'10px'}} onChange={(e) => setPhoto(e.target.files[0])} type="file" name="" id="" required />
                                 <div className={styleLogin.formCheck}>
                                     <input className={styleLogin.formCheckBox} type="checkbox" />
                                     <label className={styleLogin.inputlabelCheckBox}> I agree to terms & conditions</label>

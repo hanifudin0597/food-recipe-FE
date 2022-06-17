@@ -1,3 +1,5 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
+/* eslint-disable no-unused-vars */
 import React, { useState } from "react";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import styleLogin from "../assets/styles/css/Login.module.css"
@@ -41,9 +43,9 @@ const Login = () => {
                             <small className={styleLogin.inputSmall}>Log in into your existing account</small>
                             <form onSubmit={(e) => onSubmit(e)} >
                                 <label className={styleLogin.inputLabel} >Email</label>
-                                <input onChange={(e) => setForm({ ...form, email: e.target.value })} className={styleLogin.formInputType} type="text" placeholder="examplexxx@gmail.com" />
+                                <input style={{padding:'10px'}} onChange={(e) => setForm({ ...form, email: e.target.value })} className={styleLogin.formInputType} type="text" placeholder="examplexxx@gmail.com" />
                                 <label className={styleLogin.inputLabel}>Password</label>
-                                <input onChange={(e) => setForm({ ...form, password: e.target.value })} className={styleLogin.formInputType} type="password" placeholder="Password" />
+                                <input style={{padding:'10px'}} onChange={(e) => setForm({ ...form, password: e.target.value })} className={styleLogin.formInputType} type="password" placeholder="Password" />
                                 <div className={styleLogin.formCheck}>
                                     <input className={styleLogin.formCheckBox} type="checkbox" />
                                     <label className={styleLogin.inputlabelCheckBox} > I agree to terms & conditions</label>

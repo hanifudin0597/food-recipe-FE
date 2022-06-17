@@ -5,8 +5,8 @@ import styleProfile from '../assets/styles/css/Profile.module.css'
 import { Row, Col } from 'reactstrap'
 import Footer from '../components/Footer'
 import iconEdit from '../assets/img/iconEditUser.svg'
-import { Nav, NavItem, NavLink, TabContent, TabPane, Card, CardTitle, CardText, Button } from 'reactstrap'
-import { Link, useParams, useNavigate } from "react-router-dom";
+import { Nav, NavItem, NavLink, TabContent, TabPane} from 'reactstrap'
+import { Link } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { getUser } from '../redux/action/user'
 import { deleteRecipe, getMyRecipe } from '../redux/action/allRecipe'
@@ -17,9 +17,9 @@ const Profile = () => {
     const dispatch = useDispatch()
 
     // usestate untuk edit
-    const [title, setTitle] = useState("")
-    const [ingredients, setIngredients] = useState("")
-    const [video, setVideo] = useState("")
+    // const [title, setTitle] = useState("")
+    // const [ingredients, setIngredients] = useState("")
+    // const [video, setVideo] = useState("")
 
     // Get Users Profile ad Myrecipe
     const users = useSelector((state) => {
@@ -34,7 +34,7 @@ const Profile = () => {
         window.scrollTo(0, 0)
         dispatch(getUser())
         dispatch(getMyRecipe())
-    }, [])
+    }, [dispatch])
 
     const onClick = (id) => {
         Swal.fire({
@@ -84,17 +84,17 @@ const Profile = () => {
                             </div>
                             <Nav tabs className={`d-flex justify-content-left ${styleProfile.nabTab}`}>
                                 <NavItem>
-                                    <NavLink className={activeTabs == "1" ? "active" : ""} onClick={() => setactiveTabs("1")}>
+                                    <NavLink className={activeTabs === "1" ? "active" : ""} onClick={() => setactiveTabs("1")}>
                                         My Recipe
                                     </NavLink>
                                 </NavItem>
                                 <NavItem>
-                                    <NavLink className={activeTabs == "2" ? "active" : ""} onClick={() => setactiveTabs("2")}>
+                                    <NavLink className={activeTabs === "2" ? "active" : ""} onClick={() => setactiveTabs("2")}>
                                         Saved Recipe
                                     </NavLink>
                                 </NavItem>
                                 <NavItem>
-                                    <NavLink className={activeTabs == "3" ? "active" : ""} onClick={() => setactiveTabs("3")}>
+                                    <NavLink className={activeTabs === "3" ? "active" : ""} onClick={() => setactiveTabs("3")}>
                                         Liked Recipe
                                     </NavLink>
                                 </NavItem>
@@ -116,7 +116,7 @@ const Profile = () => {
 
                                                             <div className={` d-flex w-100 ${styleProfile.listMyRecipe}`}>
                                                                 <div className={`d-flex flex-column ${styleProfile.formListMyRecipe}`}>
-                                                                    <Link to={`/editrecipe/${item.id}?title=${title}&ingredient=${ingredients}&video=${video}`} className={`fa-solid fa-pen-to-square ${styleProfile.actionRecipeEdit} `}></Link>
+                                                                    <Link to={`/editrecipe/${item.id}`} className={`fa-solid fa-pen-to-square ${styleProfile.actionRecipeEdit} `}></Link>
                                                                     <button
                                                                         onClick={() => onClick(item.id)}
                                                                         className={styleProfile.actionRecipeDelete}

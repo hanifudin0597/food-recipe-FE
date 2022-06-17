@@ -1,10 +1,10 @@
-import React, { useState } from "react";
+import React from "react";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import styleDetail from '../assets/styles/css/DetailRecipe.module.css'
 import Footer from '../components/Footer'
 import { Row, Col } from 'reactstrap'
 import { useEffect } from "react";
-import { useParams, useNavigate, Link } from "react-router-dom";
+import { useParams, Link } from "react-router-dom";
 import NavBarPrimary from "../components/Navbar";
 import { getDetailRecipe } from "../redux/action/allRecipe"
 import { useDispatch, useSelector } from "react-redux";
@@ -13,7 +13,7 @@ import { useDispatch, useSelector } from "react-redux";
 const Detailrecipe = () => {
     const { id } = useParams()
     const dispatch = useDispatch()
-    const navigate = useNavigate()
+    // const navigate = useNavigate()
 
     const detailRecipe = useSelector((state) => {
         return state.detailRecipe
@@ -24,7 +24,7 @@ const Detailrecipe = () => {
     useEffect(() => {
         window.scrollTo(0, 0)
         dispatch(getDetailRecipe(id))
-    }, [])
+    }, [dispatch,id])
 
     return (
         <>

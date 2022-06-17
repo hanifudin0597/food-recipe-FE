@@ -1,11 +1,12 @@
-import React, { useState } from "react";
+/* eslint-disable jsx-a11y/iframe-has-title */
+import React from "react";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import styleVideo from '../assets/styles/css/Detailvideo.module.css'
-import Footer from '../components/Footer'
+// import Footer from '../components/Footer'
 import { Row, Col } from 'reactstrap'
 import { useEffect } from "react";
-import axios from "axios"
-import { useParams, useNavigate } from "react-router-dom";
+// import axios from "axios"
+import { useParams } from "react-router-dom";
 import NavBarPrimary from "../components/Navbar";
 import { getDetailRecipe } from "../redux/action/allRecipe"
 import { useDispatch, useSelector } from "react-redux";
@@ -25,7 +26,7 @@ const Detailvideo = () => {
     useEffect(() => {
         window.scrollTo(0, 0)
         dispatch(getDetailRecipe(id))
-    }, [])
+    }, [dispatch, id])
     return (
         <>
             <Row className={`d-flex flex-row gx-0 w-100`} >
