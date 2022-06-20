@@ -8,6 +8,7 @@ import axios from "axios";
 import { useNavigate, Link } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { login } from '../redux/action/user'
+import Swal from "sweetalert2";
 
 import { Row, Col } from "reactstrap";
 
@@ -24,7 +25,7 @@ const Login = () => {
         e.preventDefault()
         login(form)
             .then((response) => {
-                // console.log(response)
+                console.log(response)
                 return navigate('/')
             })
             .catch((err) => {
