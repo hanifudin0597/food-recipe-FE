@@ -25,10 +25,11 @@ export const login = (body) => {
             .then((response) => {
                 localStorage.setItem("token", response.data.data.token)
                 localStorage.setItem("user", JSON.stringify(response.data.data.user))
-                resolve(response.data.data)
+                resolve(response.data)
             })
             .catch((err) => {
                 reject(err)
+                // console.log(err)
             })
     })
 }

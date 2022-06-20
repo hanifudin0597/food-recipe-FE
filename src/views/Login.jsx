@@ -21,15 +21,26 @@ const Login = () => {
         password: '',
     })
     const onSubmit = (e) => {
-        // login(body)
         e.preventDefault()
         login(form)
             .then((response) => {
-                console.log(response)
+                // console.log(response)
+                if (response.code === 200) {
+                    Swal.fire(
+                    'Sucess!',
+                    `${response.message}`,
+                    'success'
+                    )
+                }
                 return navigate('/')
             })
             .catch((err) => {
-                console.log(err)
+                // console.log(err)
+                 Swal.fire(
+                    'Error!',
+                    `Email atau Password`,
+                    'error'
+                    )
             })
 
     }
