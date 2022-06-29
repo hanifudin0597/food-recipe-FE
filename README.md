@@ -84,14 +84,14 @@ REACT_APP_BACKEN_URL = [BACKEND_URL]
 ## Screenshots
 
 <div align="center">
-  <img width="250px" src="/screenshots/landing.PNG" alt="1" />
-  <img width="250px" src="/screenshots/addrecipe.PNG" alt="2" />
-  <img width="250px" src="/screenshots/editrecipe.PNG" alt="3" /> 
-  <img width="250px" src="/screenshots/detailrecipe.PNG" alt="4" />
-  <img width="250px" src="/screenshots/myprofile.PNG" alt="5" />
-  <img width="250px" src="/screenshots/register.PNG" alt="6" /> 
-  <img width="250px" src="/screenshots/login.PNG" alt="7" />
-  <img width="250px" src="/screenshots/searchrecipe.PNG" alt="8" />
+  <img width="350px" src="/screenshots/landing.PNG" alt="1" />
+  <img width="350px" src="/screenshots/addrecipe.PNG" alt="2" />
+  <img width="350px" src="/screenshots/editrecipe.PNG" alt="3" /> 
+  <img width="350px" src="/screenshots/detailrecipe.PNG" alt="4" />
+  <img width="350px" src="/screenshots/myprofile.PNG" alt="5" />
+  <img width="350px" src="/screenshots/register.PNG" alt="6" /> 
+  <img width="350px" src="/screenshots/login.PNG" alt="7" />
+  <img width="350px" src="/screenshots/searchrecipe.PNG" alt="8" />
 </div>
 
 <!-- CONTRIBUTING -->
