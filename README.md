@@ -77,22 +77,21 @@ npm install
 ### Setup .env
 Create .env file in your root project folder.
 ```
-NEXT_PUBLIC_API_URL = [BACKEND_URL]
-NEXT_PUBLIC_NAME_APLICATION = [NAME_APLICATION]
+REACT_APP_BACKEN_URL = [BACKEND_URL]
 ```
 
 <!-- ROADMAP -->
 ## Screenshots
 
 <div align="center">
-  <img width="250px" src="/screenshots/landing.png" alt="1" />
-  <img width="250px" src="/screenshots/addrecipe.png" alt="2" />
-  <img width="250px" src="/screenshots/editrecipe.png" alt="3" /> 
-  <img width="250px" src="/screenshots/detailrecipe.png" alt="4" />
-  <img width="250px" src="/screenshots/myprofile.png" alt="5" />
-  <img width="250px" src="/screenshots/register.png" alt="6" /> 
-  <img width="250px" src="/screenshots/login.png" alt="7" />
-  <img width="250px" src="/screenshots/searchrecipe.png" alt="8" />
+  <img width="250px" src="/screenshots/landing.PNG" alt="1" />
+  <img width="250px" src="/screenshots/addrecipe.PNG" alt="2" />
+  <img width="250px" src="/screenshots/editrecipe.PNG" alt="3" /> 
+  <img width="250px" src="/screenshots/detailrecipe.PNG" alt="4" />
+  <img width="250px" src="/screenshots/myprofile.PNG" alt="5" />
+  <img width="250px" src="/screenshots/register.PNG" alt="6" /> 
+  <img width="250px" src="/screenshots/login.PNG" alt="7" />
+  <img width="250px" src="/screenshots/searchrecipe.PNG" alt="8" />
 </div>
 
 <!-- CONTRIBUTING -->
