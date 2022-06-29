@@ -1,7 +1,7 @@
 <br />
 <p align="center">
 <div align="center">
-  <img height="150" src="/screenshots/logo.png"/>
+  <img height="150" src="/screenshots/logo.webp"/>
 </div>
   <h3 align="center">Food recipe</h3>
   <p align="center">
