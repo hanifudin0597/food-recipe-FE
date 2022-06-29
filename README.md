@@ -108,11 +108,11 @@ Contributions are what make the open source community such an amazing place to b
 
 
 ## Related Project
-:rocket: [`Backend Telegram Clone`](https://github.com/hanifudin0597/api-recipe-resto)
+:rocket: [`Backend Food recipe`](https://github.com/hanifudin0597/api-recipe-resto)
 
-:rocket: [`Frontend Telegram Clone`](https://github.com/hanifudin0597/food-recipe-FE)
+:rocket: [`Frontend Food recipe`](https://github.com/hanifudin0597/food-recipe-FE)
 
-:rocket: [`Demo Telegram Clone`](https://foods-recipes.netlify.app/)
+:rocket: [`Demo Food recipe`](https://foods-recipes.netlify.app/)
 
 <!-- CONTACT -->
 ## Contact
