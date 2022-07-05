@@ -16,7 +16,6 @@
 </p>
 
 
-
 <!-- TABLE OF CONTENTS -->
 ## Table of Contents
 
@@ -93,6 +92,65 @@ REACT_APP_BACKEN_URL = [BACKEND_URL]
   <img width="350px" src="/screenshots/login.PNG" alt="7" />
   <img width="350px" src="/screenshots/searchrecipe.PNG" alt="8" />
 </div>
+
+<table>
+ <tr>
+    <td><img width="350px" src="/screenshots/landing.PNG" alt="1" /></td>
+  </tr>
+   <tr>
+    <td>Landing Page</td>
+  </tr>
+  
+  <tr>
+    <td> <img width="350px" src="/screenshots/addrecipe.PNG" alt="2" /></td>
+  </tr>
+   <tr>
+    <td>Add Recipe</td>
+  </tr>
+  
+  <tr>
+    <td><img width="350px" src="/screenshots/editrecipe.PNG" alt="3" /> </td>
+  </tr>
+   <tr>
+    <td>Edit Recipe</td>
+  </tr>
+  
+  <tr>
+    <td><img width="350px" src="/screenshots/detailrecipe.PNG" alt="4" /></td>
+  </tr>
+  <tr>
+    <td>Detail Recipe</td>
+  </tr>
+  
+  <tr>
+    <td><img width="350px" src="/screenshots/myprofile.PNG" alt="5" /></td>
+  </tr>
+  <tr>
+    <td>My Profile</td>
+  </tr>
+  
+  <tr>
+    <td>  <img width="350px" src="/screenshots/register.PNG" alt="6" /> </td>
+  </tr>
+  <tr>
+    <td>Register</td>
+    <td>Profile Worker - Experience Page</td>
+  </tr>
+  
+  <tr>
+    <td><img width="350px" src="/screenshots/login.PNG" alt="7" /></td>
+  </tr>
+  <tr>
+    <td>Login</td>
+  </tr>
+  <tr>
+    <td>  <img width="350px" src="/screenshots/searchrecipe.PNG" alt="8" /></td>
+  </tr>
+  <tr>
+    <td>Search Recipe</td>
+  </tr>
+
+</table>
 
 <!-- CONTRIBUTING -->
 ## Contributing
