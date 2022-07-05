@@ -82,7 +82,7 @@ REACT_APP_BACKEN_URL = [BACKEND_URL]
 <!-- ROADMAP -->
 ## Screenshots
 
-<div align="center">
+<!-- <div align="center">
   <img width="350px" src="/screenshots/landing.PNG" alt="1" />
   <img width="350px" src="/screenshots/addrecipe.PNG" alt="2" />
   <img width="350px" src="/screenshots/editrecipe.PNG" alt="3" /> 
@@ -91,7 +91,7 @@ REACT_APP_BACKEN_URL = [BACKEND_URL]
   <img width="350px" src="/screenshots/register.PNG" alt="6" /> 
   <img width="350px" src="/screenshots/login.PNG" alt="7" />
   <img width="350px" src="/screenshots/searchrecipe.PNG" alt="8" />
-</div>
+</div> -->
 
 <table>
  <tr>
