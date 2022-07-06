@@ -118,6 +118,7 @@ REACT_APP_BACKEN_URL = [BACKEND_URL]
     <td>Login</td>
     <td>Search Recipe</td>
   </tr>
+
 </table>
 
 <!-- CONTRIBUTING -->

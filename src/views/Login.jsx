@@ -55,7 +55,7 @@ const Login = () => {
                             <small className={styleLogin.inputSmall}>Log in into your existing account</small>
                             <form onSubmit={(e) => onSubmit(e)} >
                                 <label className={styleLogin.inputLabel} >Email</label>
-                                <input style={{padding:'10px'}} onChange={(e) => setForm({ ...form, email: e.target.value })} className={styleLogin.formInputType} type="text" placeholder="examplexxx@gmail.com" />
+                                <input style={{padding:'10px'}} onChange={(e) => setForm({ ...form, email: e.target.value })} className={styleLogin.formInputType} type="text" placeholder="Enter email address" />
                                 <label className={styleLogin.inputLabel}>Password</label>
                                 <input style={{padding:'10px'}} onChange={(e) => setForm({ ...form, password: e.target.value })} className={styleLogin.formInputType} type="password" placeholder="Password" />
                                 <div className={styleLogin.formCheck}>
